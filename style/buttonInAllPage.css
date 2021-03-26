@@ -1,0 +1,56 @@
+.buttonInAllPage{
+    position: fixed;
+    top: 50vh;
+    width: 150px;
+    height: 25px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 4px 15px;
+    font-weight: bold;
+}
+
+#bContact{
+    left: -35px;
+    transform:rotate(-90deg);
+}
+
+#bAPropos{
+    right: -35px;
+    transform:rotate(90deg);
+}
+
+#contact{
+    position: fixed;
+    top: 48vh;
+}
+
+#aPropos{
+    position: fixed;
+    top: 48vh;
+}
+
+.hiddenC{
+    color: transparent;
+    left: -200px;
+    transition: left 1.5s, color 0.5s;
+}
+
+.visibleC{
+    color: black;
+    left: 65px;
+    transition: left 0.5s, color 1.5s;
+}
+
+.hiddenP{
+    color: transparent;
+    right: -200px;
+    transition: right 1.5s, color 0.5s;
+}
+
+.visibleP{
+    color: black;
+    right: 65px;
+    transition: right 0.5s, color 1.5s;
+}
