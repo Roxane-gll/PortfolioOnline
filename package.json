@@ -1,0 +1,10 @@
+{
+  "name": "portfolio-oneline",
+  "version": "0.0.1",
+  "description": "portfolio",
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "index.html"
+  }
+}
