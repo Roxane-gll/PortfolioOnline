@@ -1,6 +1,58 @@
 @import url(buttonInAllPage.css);
+@import url(projetPage.css);
+@import url(scroolbar.css);
 
 *{
     font-family: 'Open Sans Condensed', sans-serif;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+}
+
+#buttonToTop{
+    position: fixed;
+    top: 0;
+    left: 48vw;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    appearance: none;
+    border: none;
+    background-color: cornflowerblue;
+    outline: none;
+    padding: 4px 15px;
+    font-weight: bold;
+}
+
+#buttonToProjects{
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 48vw;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    appearance: none;
+    border: none;
+    background-color: cornflowerblue;
+    outline: none;
+    padding: 4px 15px;
+    font-weight: bold;
+}
+
+#centre{
+    text-align: center;
+    position: relative;
+    top: 45vh;
+    left: 25vw;
+    width: 50vw;
+}

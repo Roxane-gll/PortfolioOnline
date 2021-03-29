@@ -1,5 +1,5 @@
 .buttonInAllPage{
-    position: fixed;
+    position: absolute;
     top: 50vh;
     width: 150px;
     height: 25px;

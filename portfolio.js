@@ -1,17 +1,20 @@
-let who=document.domain;
-let person='';
+/*let who=document.domain;*/
+
 
 import * as roxane from './dribbble/roxaneDribbble.js';
+import * as marine from './dribbble/marineDribbble.js';
 
 /*if(who.indexOf("roxane")){
     person='roxane';
 }*/
 
+let person=roxane;
+
 let contactsPerson=document.getElementById('contact')
-contactsPerson.innerHTML=`<p>${roxane.name}`
+contactsPerson.innerHTML=`<p>${person.name}`
 
 let aProposPerson=document.getElementById('aPropos')
-aProposPerson.innerHTML=`<p>${roxane.tel}`
+aProposPerson.innerHTML=`<p>${person.tel}`
 
 const buttonsAllPage= document.querySelectorAll(".buttonInAllPage");
 
@@ -40,3 +43,21 @@ for ( let buttonAllPage of  buttonsAllPage) {
         }
     })
 }
+
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user/shots?access_token='+person.accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+        if (data.length > 0) {
+            $.each(data.reverse(), function(i, val) {
+                $('#projets').prepend(
+                    '<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></a>'
+                )
+            })
+        }
+        else {
+            $('#projets').append('<p>No shots yet!</p>');
+        }
+    }
+});
