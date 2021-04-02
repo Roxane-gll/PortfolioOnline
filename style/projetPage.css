@@ -10,12 +10,11 @@
     display: inline-grid;
 }
 
-.test{
-    padding: 45vh 0 0 0;
-    text-align: center;
-    height: 100vh;
-    width: 98vw;
-    z-index: -1;
+.carousel-indicators{
+    bottom: 15px;
+}
+
+.carousel-inner{
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }

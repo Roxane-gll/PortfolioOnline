@@ -1,4 +1,6 @@
 .buttonInAllPage{
+    z-index: 1;
+    font-family: 'Open Sans Condensed', sans-serif;
     position: absolute;
     top: 50vh;
     width: 150px;
@@ -6,51 +8,87 @@
     appearance: none;
     border: none;
     background-color: transparent;
-    outline: none;
     padding: 4px 15px;
     font-weight: bold;
 }
 
 #bContact{
-    left: -35px;
-    transform:rotate(-90deg);
+    right: -35px;
+    transform:rotate(90deg);
+    outline: none;
 }
 
 #bAPropos{
-    right: -35px;
-    transform:rotate(90deg);
+    left: -35px;
+    transform:rotate(-90deg);
+    outline: none;
 }
 
 #contact{
+    z-index: 3;
     position: fixed;
     top: 48vh;
+    transition: left 1.5s, opacity 0.5s;
 }
 
 #aPropos{
+    z-index: 3;
     position: fixed;
     top: 48vh;
-}
-
-.hiddenC{
-    color: transparent;
-    left: -200px;
     transition: left 1.5s, color 0.5s;
 }
 
+.hiddenC{
+    opacity: 0;
+    right: -100vw;
+    transition: left 1.5s, opacity 0.5s;
+}
+
+.hiddenC>div>p>a{
+    opacity: 0;
+    right: -100vw;
+    transition: left 1.5s, opacity 0.5s;
+}
+
 .visibleC{
+    opacity: 1;
+    left: 65px;
+    transition: left 1.5s, opacity 0.5s;
+}
+
+.visibleC>div>p>a{
+    opacity: 1;
+    left: 65px;
+    transition: left 1.5s, opacity 0.5s;
+}
+
+.hiddenP{
+    color: transparent;
+    left: -150vw;
+    transition: left 1.5s, color 0.5s;
+}
+
+.visibleP{
     color: black;
     left: 65px;
     transition: left 0.5s, color 1.5s;
 }
 
-.hiddenP{
-    color: transparent;
-    right: -200px;
-    transition: right 1.5s, color 0.5s;
+.modalOn{
+    z-index: 2;
+    background-color: #797979;
 }
 
-.visibleP{
-    color: black;
-    right: 65px;
-    transition: right 0.5s, color 1.5s;
+.modalOff{
+    z-index: -2;
+    background-color: transparent;
+}
+
+#modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 1s;
 }

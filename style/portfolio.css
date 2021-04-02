@@ -17,34 +17,34 @@ body{
 }
 
 #buttonToTop{
+    font-family: 'Open Sans Condensed', sans-serif;
     position: fixed;
     top: 0;
     left: 48vw;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     appearance: none;
     border: none;
-    background-color: cornflowerblue;
+    background-color: #9580ff;
     outline: none;
     padding: 4px 15px;
-    font-weight: bold;
 }
 
 #buttonToProjects{
+    font-family: 'Open Sans Condensed', sans-serif;
     margin: 5px;
     position: absolute;
     bottom: 0;
     left: 48vw;
     border-radius: 50%;
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     appearance: none;
     border: none;
-    background-color: cornflowerblue;
+    background-color: #9580ff;
     outline: none;
     padding: 4px 15px;
-    font-weight: bold;
 }
 
 #centre{
