@@ -19,3 +19,22 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+
+.car{
+    padding: 45vh 0 0 0;
+    background-color: cornflowerblue;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel-control-prev>span{
+    background-image: none;
+    position: absolute;
+    color: black;
+}
+
+.carousel-control-next>span{
+    background-image: none;
+    position: absolute;
+    color: black;
+}
