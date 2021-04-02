@@ -1,11 +1,10 @@
 @import url(buttonInAllPage.css);
 @import url(projetPage.css);
 @import url(scroolbar.css);
+@import url(carroussel.css);
 
 *{
     font-family: 'Open Sans Condensed', sans-serif;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
 }
 
 html {
