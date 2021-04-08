@@ -2,6 +2,8 @@ import * as roxane from './dribbble/roxaneDribbble.js';
 import * as marine from './dribbble/marineDribbble.js';
 import * as ben from './dribbble/benDribbble.js';
 
+
+
 let who=document.domain;
 let person=marine;
 if(who.includes("roxane")){
@@ -11,6 +13,8 @@ if(who.includes("roxane")){
 }else if(who.includes("ben")){
     person=ben;
 }
+
+
 
 let contactsPerson=document.getElementById('contact')
 contactsPerson.innerHTML=`<div><p>${person.name}</div>`
