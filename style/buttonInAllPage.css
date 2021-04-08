@@ -1,7 +1,7 @@
 .buttonInAllPage{
     z-index: 1;
     font-family: 'Open Sans Condensed', sans-serif;
-    position: absolute;
+    position: fixed;
     top: 50vh;
     width: 150px;
     height: 25px;

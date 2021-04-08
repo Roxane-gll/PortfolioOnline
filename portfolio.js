@@ -1,14 +1,16 @@
-/*let who=document.domain;*/
-
-
 import * as roxane from './dribbble/roxaneDribbble.js';
 import * as marine from './dribbble/marineDribbble.js';
+import * as ben from './dribbble/benDribbble.js';
 
-/*if(who.indexOf("roxane")){
-    person='roxane';
-}*/
-
+let who=document.domain;
 let person=marine;
+if(who.includes("roxane")){
+    person=roxane;
+}else if(who.includes("marine")){
+    person=marine;
+}else if(who.includes("ben")){
+    person=ben;
+}
 
 let contactsPerson=document.getElementById('contact')
 contactsPerson.innerHTML=`<div><p>${person.name}</div>`
@@ -67,11 +69,11 @@ $.ajax({
             $.each(data.reverse(), function(i, val) {
                 if(val.title.indexOf('#0')){
                     $('#projets').prepend(
-                        '<div id="'+val.title.slice(0,-2)+'" class="carousel slide" data-ride="carousel">\n' +
-                        '<ol class="carousel-indicators" id="'+val.title.slice(0,-2)+'-indicators">\n' +
+                        '<div id="'+val.title.slice(0,-3)+'" class="carousel slide" data-ride="carousel">\n' +
+                        '<ol class="carousel-indicators" id="'+val.title.slice(0,-3)+'-indicators">\n' +
                         '    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>\n' +
                         '</ol>\n'+
-                        '<div class="carousel-inner" id="'+val.title.slice(0,-2)+'-inner">\n'+
+                        '<div class="carousel-inner" id="'+val.title.slice(0,-3)+'-inner">\n'+
                         '   <div class="carousel-item active">\n' +
                         '        <a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></a>\n' +
                         '   </div>\n'+
@@ -88,8 +90,8 @@ $.ajax({
                 }else {
                     $('<div class="carousel-item">\n' +
                         '        <a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></a>\n' +
-                        '   </div>').appendTo('#'+val.title.slice(0,-2)+'-inner');
-                    $('<li data-target="#carouselExampleIndicators" data-slide-to="'+val.title.slice(-1)+'"></li>').appendTo('#'+val.title.slice(0,-2)+'-indicators')
+                        '   </div>').appendTo('#'+val.title.slice(0,-3)+'-inner');
+                    $('<li data-target="#carouselExampleIndicators" data-slide-to="'+val.title.slice(-1)+'"></li>').appendTo('#'+val.title.slice(0,-3)+'-indicators')
 
                 }
             })
