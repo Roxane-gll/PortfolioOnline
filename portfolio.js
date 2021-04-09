@@ -1,10 +1,10 @@
-import * as roxane from './dribbble/roxaneDribbble.js';
+/*import * as roxane from './dribbble/roxaneDribbble.js';
 import * as marine from './dribbble/marineDribbble.js';
-import * as ben from './dribbble/benDribbble.js';
+import * as ben from './dribbble/benDribbble.js';*/
 
 console.log(access)
 
-let who=document.domain;
+/*let who=document.domain;
 let person=roxane;
 if(who.includes("roxane")){
     person=roxane;
@@ -41,7 +41,7 @@ $.ajax({
         aProposPerson.innerHTML=`<div><p>${bio}</div>`
     }
 })
-
+*/
 
 //contactsPerson.innerHTML=`<div><p>${person.name}</div>`
 
@@ -86,7 +86,7 @@ for ( let buttonAllPage of  buttonsAllPage) {
         }
     })
 }
-
+/*
 $.ajax({
     url: 'https://api.dribbble.com/v2/user/shots?access_token='+person.accessToken,
     dataType: 'json',
@@ -144,7 +144,7 @@ $.ajax({
         }
     }
 });
-
+*/
 /*$.ajax({
     url: 'https://api.dribbble.com/v2/user/shots?access_token='+person.accessToken,
     dataType: 'json',
