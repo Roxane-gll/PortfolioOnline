@@ -4,3 +4,17 @@ export let accessToken=
 export let name='Roxane Guella';
 export let aPropos='07 82 24 19 13';
 
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user?access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+        if (data.length > 0) {
+            $.each(data.reverse(), function(i, val) {
+                console.log(val)
+            })
+        }
+    }
+})
+
+

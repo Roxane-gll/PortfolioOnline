@@ -5,7 +5,7 @@ import * as ben from './dribbble/benDribbble.js';
 
 
 let who=document.domain;
-let person=marine;
+let person=roxane;
 if(who.includes("roxane")){
     person=roxane;
 }else if(who.includes("marine")){
@@ -14,13 +14,22 @@ if(who.includes("roxane")){
     person=ben;
 }
 
-
-
-let contactsPerson=document.getElementById('contact')
-contactsPerson.innerHTML=`<div><p>${person.name}</div>`
-
 let aProposPerson=document.getElementById('aPropos')
-aProposPerson.innerHTML=`<div><p>${person.aPropos}</div>`
+let contactsPerson=document.getElementById('contact')
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user?access_token='+person.accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+        console.log(data.links)
+        let bio=data.bio.replaceAll('\n', '<br>')
+        contactsPerson.innerHTML=`<div><p>${data.links}</div>`
+        aProposPerson.innerHTML=`<div><p>${bio}</div>`
+    }
+})
+
+
+//contactsPerson.innerHTML=`<div><p>${person.name}</div>`
 
 const buttonsAllPage= document.querySelectorAll(".buttonInAllPage");
 
