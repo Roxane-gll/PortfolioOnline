@@ -4,7 +4,8 @@ $access_token=getenv('accessToken');
 
 
 ?>
-
+<?php
+?>
 
 <script type="text/javascript">
 var accessToken = "<?= $access_token ?>";
@@ -13,7 +14,7 @@ let aProposPerson=document.getElementById('aPropos')
 let contactsPerson=document.getElementById('contact')
 
 //add info from dribbble
-/*
+
 $.ajax({
     url: 'https://api.dribbble.com/v2/user?access_token='+accessToken,
     dataType: 'json',
@@ -99,6 +100,6 @@ $.ajax({
         }
     }
 });
-*/
+
 </script>
 
