@@ -8,7 +8,7 @@
 ?>
 
 <script type="text/javascript">
-/*var accessToken = "<?= $access_token ?>";
+var accessToken = "<?= $access_token ?>";
 
 let aProposPerson=document.getElementById('aPropos')
 let contactsPerson=document.getElementById('contact')
@@ -99,7 +99,7 @@ $.ajax({
             );
         }
     }
-});*/
+});
 
 </script>
 
