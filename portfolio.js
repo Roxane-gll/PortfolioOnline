@@ -47,39 +47,40 @@ $.ajax({
 
 const buttonsAllPage= document.querySelectorAll(".buttonInAllPage");
 
-const modal=document.querySelector("#modal");
+const modalC=document.querySelector("#modalC");
+const modalP=document.querySelector("#modalP");
 
 for ( let buttonAllPage of  buttonsAllPage) {
     buttonAllPage.addEventListener("click",()=>{
         if(buttonAllPage.value==='contacts'){
             buttonAllPage.nextElementSibling.classList.toggle("hiddenC")
             buttonAllPage.nextElementSibling.classList.toggle("visibleC")
-            modal.classList.toggle("modalOn")
-            modal.classList.toggle("modalOff")
+            modalC.classList.toggle("modalOn")
+            modalC.classList.toggle("modalOff")
             buttonAllPage.style.zIndex=2
             buttonAllPage.innerText='Close';
             buttonAllPage.value='contactClose';
         }else if(buttonAllPage.value==='contactClose'){
             buttonAllPage.nextElementSibling.classList.toggle("hiddenC")
             buttonAllPage.nextElementSibling.classList.toggle("visibleC")
-            modal.classList.toggle("modalOn")
-            modal.classList.toggle("modalOff")
+            modalC.classList.toggle("modalOn")
+            modalC.classList.toggle("modalOff")
             buttonAllPage.style.zIndex=1
             buttonAllPage.innerText='Contacts';
             buttonAllPage.value='contacts';
         }else if(buttonAllPage.value==='aPropos'){
             buttonAllPage.nextElementSibling.classList.toggle("hiddenP")
             buttonAllPage.nextElementSibling.classList.toggle("visibleP")
-            modal.classList.toggle("modalOn")
-            modal.classList.toggle("modalOff")
+            modalP.classList.toggle("modalOn")
+            modalP.classList.toggle("modalOff")
             buttonAllPage.style.zIndex=2
             buttonAllPage.innerText='Close';
             buttonAllPage.value='aProposClose';
         }else if(buttonAllPage.value==='aProposClose'){
             buttonAllPage.nextElementSibling.classList.toggle("hiddenP")
             buttonAllPage.nextElementSibling.classList.toggle("visibleP")
-            modal.classList.toggle("modalOn")
-            modal.classList.toggle("modalOff")
+            modalP.classList.toggle("modalOn")
+            modalP.classList.toggle("modalOff")
             buttonAllPage.style.zIndex=0
             buttonAllPage.innerText='À propos';
             buttonAllPage.value='aPropos';
