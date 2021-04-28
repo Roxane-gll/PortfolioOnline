@@ -26,14 +26,82 @@
     width: 100vw;
 }
 
-.carousel-control-prev>span{
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: none;
+    background-size: 100%, 100%;
+    border-radius: 50%;
     background-image: none;
-    position: absolute;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 55px;
     color: black;
 }
 
-.carousel-control-next>span{
-    background-image: none;
-    position: absolute;
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
     color: black;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+html,
+body {
+    padding: 2rem;
+    margin: 0;
+    background: whitesmoke;
+    font-family: "Rubik";
+    font-size: 15px;
+}
+
+#shots {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: auto;
+}
+#shots .shot {
+    position: relative;
+    display: block;
+    width: 25%;
+    background: #ea4c89;
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (max-width: 779px) {
+    #shots .shot {
+        width: 50%;
+    }
+}
+#shots .shot:hover img {
+    opacity: 0.1;
+}
+#shots .shot:hover .title {
+    opacity: 1;
+}
+#shots .shot .title {
+    position: absolute;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#shots .shot img {
+    display: block;
+    max-width: 100%;
+    transition: opacity 0.2s ease-in-out;
 }
