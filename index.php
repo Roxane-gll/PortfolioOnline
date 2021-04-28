@@ -1,6 +1,6 @@
 <?php include_once('home.html');
 
-//$access_token=getenv('accessToken');
+$access_token=getenv('accessToken');
 
 
 ?>
