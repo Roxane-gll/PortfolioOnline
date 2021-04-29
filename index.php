@@ -16,7 +16,7 @@ let contactsPerson=document.getElementById('contact')
 //add info from dribbble
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user?access_token='+<?= getenv('accessToken') ?>,
+    url: 'https://api.dribbble.com/v2/user?access_token='+'<?= getenv('accessToken') ?>',
     dataType: 'json',
     type: 'GET',
     success: function(data) {
@@ -40,7 +40,7 @@ $.ajax({
 //add projet
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user/shots?access_token='+<?= getenv('accessToken') ?>+'&per_page',
+    url: 'https://api.dribbble.com/v2/user/shots?access_token='+'<?= getenv('accessToken') ?>'+'&per_page',
     dataType: 'json',
     type: 'GET',
     success: function(data) {
