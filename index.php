@@ -44,39 +44,51 @@ $.ajax({
 //add projet
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken,
+    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken+'&per_page=100',
     dataType: 'json',
     type: 'GET',
     success: function(data) {
+        console.log(data)
         if (data.length > 0) {
             $.each(data.reverse(), function(i, val) {
-                if(val.title.includes('#0')){
+                let title=val.title.slice(0,-3).toLowerCase().replaceAll(' ', '_')
+                let inData
+                console.log(val.description)
+                if(val.description!==null){
+                    inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/><p>"'+val.description+'"</p></a>'
+                }else{
+                    inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/></a>'
+                }
+                
+                if(val.title.includes('#1')){
                     $('#projets').prepend(
-                        '<div id="'+val.title.slice(0,-3)+'" class="carousel slide" data-ride="carousel">\n' +
-                        '<ol class="carousel-indicators" id="'+val.title.slice(0,-3)+'-indicators">\n' +
-                        '    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>\n' +
+                        '<div id="'+title+'" class="carousel slide" data-ride="carousel">\n' +
+                        '<ol class="carousel-indicators" id="'+title+'-indicators">\n' +
+                        '    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>\n' +
                         '</ol>\n'+
-                        '<div class="carousel-inner" id="'+val.title.slice(0,-3)+'-inner">\n'+
+                        '<div class="carousel-inner" id="'+title+'-inner">\n'+
                         '   <div class="carousel-item active">\n' +
-                        '        <a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.normal +'"/></a>' +
+                        inData +
                         '   </div>\n'+
 
                         '</div>\n'+
-                        '<a class="carousel-control-prev" href="#'+val.title.slice(0,-3)+'" role="button" data-slide="prev">\n' +
+                        '<a class="carousel-control-prev" href="#'+title+'" role="button" data-slide="prev">\n' +
                     '       <span class="carousel-control-prev-icon" aria-hidden="true"></span>\n' +
                     '       <span class="sr-only">Previous</span>\n' +
                     '   </a>\n' +
-                    '   <a class="carousel-control-next" href="#'+val.title.slice(0,-3)+'" role="button" data-slide="next">\n' +
+                    '   <a class="carousel-control-next" href="#'+title+'" role="button" data-slide="next">\n' +
                     '       <span class="carousel-control-next-icon" aria-hidden="true"></span>\n' +
                     '       <span class="sr-only">Next</span>\n' +
                     '   </a>\n'
+                        
                     )
-                }else {
-                    $('<div class="carousel-item">\n' +
-                        '        <a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.normal +'"/></a>' +
-                        '   </div>').appendTo('#'+val.title.slice(0,-3)+'-inner');
-                    $('<li data-target="#carouselExampleIndicators" data-slide-to="'+val.title.slice(-1)+'"></li>').appendTo('#'+val.title.slice(0,-3)+'-indicators')
-
+                }else{
+                    $('#'+title+'-inner').append(
+                        '<div class="carousel-item">\n' +
+                        inData +
+                        '   </div>'
+                    )
+                    $('#'+title+'-indicators').append('<li data-target="#carouselExampleIndicators" data-slide-to="'+val.title.slice(-1)+'"></li>')
                 }
             })
         }

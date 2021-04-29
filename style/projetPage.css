@@ -17,8 +17,8 @@
 .carousel-inner{
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 400px;
-    width: 400px;
+    height: 100vh;
+    width: 100vw;
     position: relative;
     top: 35%;
     left: 100px;
@@ -96,8 +96,8 @@ ol.carousel-indicators li.active {
 }
 
 .shot>img{
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 533px;
 }
 
 .shot >p:hover{
