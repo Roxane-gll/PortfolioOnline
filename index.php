@@ -8,7 +8,7 @@ $access_token=getenv('accessToken');
 ?>
 
 <script type="text/javascript">
-var accessToken = "<?= getenv('accessToken') ?>";
+//var accessToken = "<?= getenv('accessToken') ?>";
 
 let aProposPerson=document.getElementById('aPropos')
 let contactsPerson=document.getElementById('contact')
@@ -16,7 +16,7 @@ let contactsPerson=document.getElementById('contact')
 //add info from dribbble
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user?access_token='+accessToken,
+    url: 'https://api.dribbble.com/v2/user?access_token='+<?= getenv('accessToken') ?>,
     dataType: 'json',
     type: 'GET',
     success: function(data) {
@@ -40,7 +40,7 @@ $.ajax({
 //add projet
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken+'&per_page',
+    url: 'https://api.dribbble.com/v2/user/shots?access_token='+<?= getenv('accessToken') ?>+'&per_page',
     dataType: 'json',
     type: 'GET',
     success: function(data) {
