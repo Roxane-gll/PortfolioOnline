@@ -8,7 +8,7 @@ $access_token=getenv('accessToken');
 ?>
 
 <script type="text/javascript">
-var accessToken = "<?= getenv('accessToken') ?>"";
+var accessToken = "<?= getenv('accessToken') ?>";
 
 let aProposPerson=document.getElementById('aPropos')
 let contactsPerson=document.getElementById('contact')
