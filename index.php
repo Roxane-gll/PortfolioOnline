@@ -8,7 +8,7 @@ $access_token=getenv('accessToken');
 ?>
 
 <script type="text/javascript">
-var accessToken = "<?= $access_token ?>";
+var accessToken = "<?= getenv('accessToken') ?>"";
 
 let aProposPerson=document.getElementById('aPropos')
 let contactsPerson=document.getElementById('contact')
@@ -20,15 +20,11 @@ $.ajax({
     dataType: 'json',
     type: 'GET',
     success: function(data) {
-        console.log(data.links.github)
-        console.log(Object.entries(data.links))
         let links=Object.entries(data.links)
 
         var keys = [];
         for (var key in links) {
             if (links.hasOwnProperty(key)) {
-                console.log(key, links[key])
-                console.log(key, links[key][0])
                 $('#contact').prepend(
                     `<li><a href="${links[key][1]}">${links[key][0]}</a></li>`
                 )
@@ -44,16 +40,14 @@ $.ajax({
 //add projet
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken+'&per_page=100',
+    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken+'&per_page',
     dataType: 'json',
     type: 'GET',
     success: function(data) {
-        console.log(data)
         if (data.length > 0) {
             $.each(data.reverse(), function(i, val) {
                 let title=val.title.slice(0,-3).toLowerCase().replaceAll(' ', '_')
                 let inData
-                console.log(val.description)
                 if(val.description!==null){
                     inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/><p>"'+val.description+'"</p></a>'
                 }else{

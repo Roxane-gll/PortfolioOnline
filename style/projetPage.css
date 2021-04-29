@@ -11,14 +11,17 @@
 }
 
 .carousel-indicators{
-    bottom: 50px;
+    bottom: -50px;
+    right: 85px;
+    justify-content: flex-end;
+
 }
 
 .carousel-inner{
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 90vw;
     position: relative;
     top: 35%;
     left: 100px;
@@ -92,12 +95,16 @@ ol.carousel-indicators li.active {
     color: black;
 }
 .shot >div{
-    position: absolute;   
+    position: absolute; 
+    top: 420px;
 }
 
 .shot>img{
     height: 400px;
     width: 533px;
+    position: absolute;
+    left: 50px;
+    border-radius: 14px;
 }
 
 .shot >p:hover{
