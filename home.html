@@ -13,18 +13,40 @@
     <title>Portfolio </title>
 </head>
 <body>
+    <div id="annimation" class="on">
+        <div>
+            <video id="vid" autoplay muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
     <div id="modalC" class="modalOff"></div>
     <div id="modalP" class="modalOff"></div>
-    <button id="buttonToTop">Top</button>
-    <h1 id="centre">GIF avec adj</h1>
+    <button id="buttonToTop"></button>
     <button id="bContact" class="buttonInAllPage" value="contacts">Contacts</button>
-    <div id="contact" class="hiddenC"></div>
+    <div id="contact" class="hiddenC">
+        <img id='contactTable' src="image/contact/table.svg"/>
+        <img id='contactObjet' src="image/contact/objets.svg"/>
+        <img id='contactTitre' src="image/contact/contact.svg"/>
+        <img id='contactFleche' src="image/flèche.svg"/>
+        <p>Vous voulez en apprendre plus ?</p>
+        <p>Je serai ravie de vous répondre et  de construire un projet ensemble !</p>
+        <li><a href="mailto:marine-mousset@laposte.net"><img src="image/icones/mail.svg"></a></li>
+    </div>
     <button id="bAPropos" class="buttonInAllPage" value="aPropos">À propos</button>
     <div id="aPropos" class="hiddenP"></div>
-    <button id="buttonToProjects">Vers les projets</button>
-
-        <div id="projets">
-        </div>
+    <button id="buttonToProjects"></button>
+    <div id="background">
+        <img id='vague1' src="image/vague1.svg"/>
+        <img id='vague2' src="image/vague2.svg"/>
+        <img id='vague2_bas' src="image/vague2_bas.svg"/>
+        <img id='perso' src="image/perso.svg"/>
+        <img id='phrase' src="image/phrase.svg"/>
+        <img id='deco_haut' src="image/deco_haut.svg"/>
+    </div>
+    <div id="projets">
+        <div id="footer"></div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -35,7 +57,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script type="module" src="portfolio.js"></script>
     <script type="module" src="scrool.js"></script>
 </body>
 </html>

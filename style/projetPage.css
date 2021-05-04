@@ -11,8 +11,8 @@
 }
 
 .carousel-indicators{
-    bottom: -50px;
-    right: 85px;
+    bottom: -120px;
+    right: 18.5vw;
     justify-content: flex-end;
 
 }
@@ -48,12 +48,12 @@
 }
 
 .carousel-control-prev{
-    left: 50px;
-    top: 45%;
+    left: 26vw;
+    top: 520px;
 }
 .carousel-control-next{
-    right: 50px;
-    top: 45%;
+    right: 27.5vw;
+    top: 540px;
 }
 
 .carousel-control-next-icon:after
@@ -76,7 +76,7 @@ ol.carousel-indicators li.active {
   height: 10px;
   border-radius: 100%;
   border: 0;
-  background: red;
+  background: black;
   opacity: 0.5;
 }
 
@@ -96,14 +96,16 @@ ol.carousel-indicators li.active {
 }
 .shot >div{
     position: absolute; 
-    top: 420px;
+    top: 490px;
+    left: 50vh;
 }
 
 .shot>img{
     height: 400px;
     width: 533px;
     position: absolute;
-    left: 50px;
+    top: 70px;
+    left: 40vh;
     border-radius: 14px;
 }
 
@@ -111,3 +113,24 @@ ol.carousel-indicators li.active {
     text-decoration: none;
 }
 
+.shot>p{
+    position: absolute;
+    top: 520px;
+    left: 55vh;
+}
+
+#footer{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 25vw;
+}
+
+#footer>li{
+    position: relative;
+    top: 50vh;
+    list-style: none;
+    display: inline;
+}

@@ -2,8 +2,11 @@
 @import url(projetPage.css);
 @import url(scroolbar.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Jost&display=swap');
+
+
 *{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Caveat', cursive;
 }
 
 html {
@@ -17,21 +20,27 @@ body{
 }
 
 #buttonToTop{
+    background-image: url(../image/icones/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     font-family: 'Open Sans Condensed', sans-serif;
     position: fixed;
     top: 0;
     left: 48vw;
-    border-radius: 50%;
     width: 55px;
     height: 55px;
     appearance: none;
     border: none;
-    background-color: #9580ff;
+    background-color:transparent;
     outline: none;
     padding: 4px 15px;
 }
 
 #buttonToProjects{
+    background-image: url(../image/icones/bouton_bas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 5px;
     position: absolute;
@@ -42,15 +51,189 @@ body{
     height: 75px;
     appearance: none;
     border: none;
-    background-color: #9580ff;
+    background-color:transparent;
     outline: none;
     padding: 4px 15px;
 }
 
-#centre{
-    text-align: center;
+#annimation{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#annimation>div{
+    position: absolute;
+    left: 20vw;
+    height: 100vh;
+    width: 65vw;
+    overflow: hidden;
+}
+
+video{
+    position: absolute;
+    left: -2px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video:focus { 
+    outline:none; 
+}
+
+.on{
+    opacity: 1;
+    z-index: 3;
+}
+
+.off{
+    opacity: 0;
+    z-index: -2;
+    transition: all 0.5s;
+}
+
+#background{
+    position: absolute;
+    z-index: -2;
+    top: 60vh;
+}
+
+#vague1{
+    position: absolute;
+    width:100vw;
+    top: -2vh;
+}
+
+#vague2{
+    position: absolute;
+    width: 100vw;
+    top: -2vh;
+}
+
+#vague2_bas{
+    position: absolute;
+    width: 100vw;
+    top: 40vh;
+}
+
+#perso{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    left: 56vw;
+    top: -25vh;
+}
+
+#phrase{
+    position: absolute;
+    top: -45vh;
+    height: 55vh;
+    width: 55vw;
+    left: 16vw;
+}
+
+#deco_haut{
+    position: absolute;
+    top: 3vh;
+    height: 12vh;
+    width: 12vw;
+    left: 21vw;
+}
+
+#aPropos>div{
+    position: absolute;
+    top: -15vh;
+    width: 100vw;
+}
+
+#aPropos>div>p{
+    font-family: 'Jost', sans-serif;
+}
+
+#aPropos>div>p:nth-of-type(1){
+    color: #E63E1A;
+}
+
+#aPropos>div>p:nth-of-type(n+7){
+    font-weight: bold;
+}
+
+#aProposPhrase{
+    position: absolute;
+    top: -35vh;
+    left: 0;
+    width: 20vw;
+    height: 20vh;
+}
+
+#aProposTable{
+    position: absolute;
+    left: -15vw;
+    top: 41vh;
+    width: 100vw;
+    
+}
+
+#aProposObjet{
+    position: absolute;
+    top: 5vh;
+    width: 45vw;
+    height: 45vh;
+}
+
+#contactTitre{
+    position: absolute;
+    top: -35vh;
+    left: 55vw;
+    width: 20vw;
+    height: 20vh;
+}
+
+#contactTable{
+    position: absolute;
+    right: -70vw;
+    top: 41vh;
+    width: 100vw;
+    
+}
+
+#contactObjet{
+    position: absolute;
+    top: 9vh;
+    right: -70vw;
+    width: 45vw;
+    height: 45vh;
+}
+
+
+#contact>li{
+    list-style: none;
+    display: inline;
+    margin: 5px;
     position: relative;
-    top: 45vh;
-    left: 25vw;
-    width: 50vw;
+    left: 65vw;
+    top: -15vh;
+}
+
+#contact>p{
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    text-align: left;
+    left:60vw ;
+    top: -15vh;
+}
+
+#contact>p:nth-of-type(1){
+    color: #E63E1A;
+}
+
+#contactFleche{
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    left: 60vw;
+    top: -5vh;
 }
