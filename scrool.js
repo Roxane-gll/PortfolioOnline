@@ -11,8 +11,5 @@ top.addEventListener('click',function (){
 
 projets.addEventListener('click',function (){
 
-    window.scrollTo({
-        top: divs.offsetTop,
-        behavior: 'smooth'
-    });
+    divs.childNodes[0].scrollIntoView({behavior: "smooth"})
 })

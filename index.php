@@ -21,7 +21,9 @@ $.ajax({
     type: 'GET',
     success: function(data) {
         let links=Object.entries(data.links)
-
+        $('#footer').append(
+            `<a href="${data.html_url}">Plus de projet sur dribbble</a>`
+        )
         var keys = [];
         for (var key in links) {
             if (links.hasOwnProperty(key)) {
@@ -39,6 +41,7 @@ $.ajax({
         <img id='aProposObjet' src="image/aPropos/objets.svg"/>
         <img id='aProposPhrase' src="image/aPropos/aPropos.svg"/>
         <div><p>${bio}</p></div>`
+
     }
 })
 
@@ -54,9 +57,9 @@ $.ajax({
                 let title=val.title.slice(0,-3).toLowerCase().replaceAll(' ', '_').replaceAll('?', '')
                 let inData
                 if(val.description!==null){
-                    inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/><p>'+val.description+'</p></a>'
+                    inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><span class="fleche"></span><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/><p>'+val.description+'</p></a>'
                 }else{
-                    inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/></a>'
+                    inData='<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title.slice(0,-3) + '"><span class="fleche"></span><div class="title">' + val.title.slice(0,-3) + '</div><img src="'+ val.images.hidpi +'"/></a>'
                 }
                 
                 if(val.title.includes('#1')){
