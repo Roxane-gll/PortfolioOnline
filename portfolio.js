@@ -30,7 +30,7 @@ for ( let buttonAllPage of  buttonsAllPage) {
             modalC.classList.toggle("modalOn")
             modalC.classList.toggle("modalOff")
             buttonAllPage.style.zIndex=2
-            buttonAllPage.innerText='Close';
+            buttonAllPage.innerText='X';
             buttonAllPage.value='contactClose';
         }else if(buttonAllPage.value==='contactClose'){
             buttonAllPage.nextElementSibling.classList.toggle("hiddenC")
@@ -46,7 +46,7 @@ for ( let buttonAllPage of  buttonsAllPage) {
             modalP.classList.toggle("modalOn")
             modalP.classList.toggle("modalOff")
             buttonAllPage.style.zIndex=2
-            buttonAllPage.innerText='Close';
+            buttonAllPage.innerText='X';
             buttonAllPage.value='aProposClose';
         }else if(buttonAllPage.value==='aProposClose'){
             buttonAllPage.nextElementSibling.classList.toggle("hiddenP")

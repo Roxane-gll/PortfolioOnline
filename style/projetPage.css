@@ -31,7 +31,6 @@
 
 .car{
     padding: 45vh 0 0 0;
-    background-color: cornflowerblue;
     height: 100vh;
     width: 100vw;
 }
@@ -52,7 +51,7 @@
     top: 520px;
 }
 .carousel-control-next{
-    right: 27.5vw;
+    right: 29vw;
     top: 540px;
 }
 
@@ -60,13 +59,13 @@
 {
     content: '>';
     font-size: 55px;
-    color: black;
+    color: white;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
-    color: black;
+    color: white;
 }
 
 ol.carousel-indicators li,
@@ -95,6 +94,7 @@ ol.carousel-indicators li.active {
     color: black;
 }
 .shot >div{
+    font-weight: bold;
     font-size: 25px;
     color: #E63E1A;
     position: absolute; 
@@ -133,19 +133,22 @@ ol.carousel-indicators li.active {
 }
 
 #footer>p{
+    font-weight: bold;
     position: relative;
     top: 35vh;
     color: #E63E1A;
 }
 
 #footer>p:nth-of-type(1){
-    font-size: 50px;
+    font-size: 60px;
 
 }
 
 #footer>p:nth-of-type(2){
+    font-family: 'Jost', sans-serif;
     font-size: 30px;
     left: -5vw;
+    top: 32vh;
 }
 
 #footer>a{
@@ -158,18 +161,20 @@ ol.carousel-indicators li.active {
 
 #footer>li{
     position: relative;
-    top: 45vh;
+    top: 37vh;
     left: 2vw;
     list-style: none;
     display: inline;
     margin: 10px;
+    height: 10vh;
+    width: 10vw;
 }
 
 #footerFleche{
     height: 10vh;
     width: 10vw;
     position: absolute;
-    top: 60vh;
+    top: 55vh;
     left: 37vw;
 }
 
@@ -191,7 +196,7 @@ ol.carousel-indicators li.active {
     position: absolute;
     width: 35vw;
     height: 35vh;
-    top: 63vh;
+    top: 64vh;
     left: 10vw;
 }
 
