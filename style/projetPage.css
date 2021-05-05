@@ -43,7 +43,7 @@
     background-size: 100%, 100%;
     border-radius: 50%;
     background-image: none;
-    
+    font-family: 'Jost', sans-serif;
 }
 
 .carousel-control-prev{
@@ -55,8 +55,7 @@
     top: 540px;
 }
 
-.carousel-control-next-icon:after
-{
+.carousel-control-next-icon:after{
     content: '>';
     font-size: 55px;
     color: white;
