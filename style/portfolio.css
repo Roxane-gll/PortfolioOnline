@@ -88,7 +88,7 @@ video:focus {
 
 .on{
     opacity: 1;
-    z-index: 3;
+    z-index: 4;
 }
 
 .off{
