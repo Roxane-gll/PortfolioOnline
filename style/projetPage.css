@@ -95,11 +95,11 @@ ol.carousel-indicators li.active {
 }
 .shot >div{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 35px;
     color: #E63E1A;
     position: absolute; 
     top: 460px;
-    left: 40vh;
+    left: 35vh;
 }
 
 .shot>img{
@@ -116,11 +116,12 @@ ol.carousel-indicators li.active {
 }
 
 .shot>p{
+    background-color: white;
     font-family: 'Jost', sans-serif;
     position: absolute;
-    top: 500px;
-    left: 45vh;
-    width: 480px;
+    top: 510px;
+    left: 43vh;
+    width: 500px;
 }
 
 #footer{
@@ -206,10 +207,10 @@ ol.carousel-indicators li.active {
     background-position: center;
     background-size: contain;
     position: absolute;
-    top: 68vh;
-    left: 19vw;
-    height: 3vh;
-    width: 3vw;
+    top: 70vh;
+    left: 16vw;
+    height: 5vh;
+    width: 5vw;
 }
 
 #num1{
