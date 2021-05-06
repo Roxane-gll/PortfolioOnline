@@ -112,6 +112,7 @@ ol.carousel-indicators li.active {
 }
 
 .shot >p:hover{
+    text-align: left;
     text-decoration: none;
 }
 
