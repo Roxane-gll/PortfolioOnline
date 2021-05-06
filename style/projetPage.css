@@ -20,7 +20,7 @@
 .carousel-inner{
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 90vh;
+    height: 100vh;
     width: 90vw;
     position: relative;
     top: 35%;
