@@ -152,14 +152,16 @@ video:focus {
 }
 
 #aPropos>div>p{
+    font-size: 20px;
     font-family: 'Jost', sans-serif;
 }
 
 #aPropos>div>p:nth-of-type(1){
     color: #E63E1A;
+    font-weight: bold;
 }
 
-#aPropos>div>p:nth-of-type(n+7){
+#aPropos>div>p:nth-of-type(n+8){
     font-weight: bold;
 }
 
@@ -189,7 +191,7 @@ video:focus {
 #contactTitre{
     position: absolute;
     top: -35vh;
-    left: 55vw;
+    left: 60vw;
     width: 20vw;
     height: 20vh;
 }
@@ -204,10 +206,10 @@ video:focus {
 
 #contactObjet{
     position: absolute;
-    top: 16vh;
+    top: 19.5vh;
     right: -70vw;
-    width: 35vw;
-    height: 35vh;
+    width: 30vw;
+    height: 30vh;
 }
 
 
@@ -220,7 +222,16 @@ video:focus {
     top: -15vh;
 }
 
+#contact>li>a>img:nth-of-type(1){
+    height: 4vh;
+}
+
+#contact>li>a>img{
+    height: 5vh;
+}
+
 #contact>p{
+    font-size: 17px;
     font-family: 'Jost', sans-serif;
     position: relative;
     text-align: left;
@@ -230,6 +241,7 @@ video:focus {
 
 #contact>p:nth-of-type(1){
     color: #E63E1A;
+    font-weight: bold;
 }
 
 #contactFleche{
