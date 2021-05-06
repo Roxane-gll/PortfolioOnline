@@ -57,13 +57,13 @@
 
 .carousel-control-next-icon:after{
     content: '>';
-    font-size: 55px;
+    font-size: 30px;
     color: white;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
-    font-size: 55px;
+    font-size: 30px;
     color: white;
 }
 
@@ -116,13 +116,23 @@ ol.carousel-indicators li.active {
 }
 
 .shot>p{
-    background-color: white;
     font-family: 'Jost', sans-serif;
     position: absolute;
     top: 510px;
     left: 43vh;
     width: 500px;
     text-align: left;
+}
+
+#backgroundP{
+    z-index: -2;
+    background-image: url(../image/backgroundP.svg);
+    background-size: cover;
+    background-position: 10% 25%;
+    position: absolute;
+    width: 100vw;
+    height: 775vh;
+    top: 15vh;
 }
 
 #footer{
@@ -153,6 +163,16 @@ ol.carousel-indicators li.active {
     top: 32vh;
 }
 
+#footer>p:nth-of-type(3){
+    font-weight: normal;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 90vh;
+    left: 35vw;
+}
+
 #footer>a{
     text-decoration: none;
     color: #E63E1A;
@@ -163,27 +183,33 @@ ol.carousel-indicators li.active {
 
 #footer>li{
     position: relative;
-    top: 37vh;
+    top: 35vh;
     left: 2vw;
     list-style: none;
     display: inline;
-    margin: 10px;
-    height: 10vh;
-    width: 10vw;
+    margin: 12px;
+}
+
+#footer>li>a>img:nth-of-type(1){
+    height: 4vh;
+}
+
+#footer>li>a>img{
+    height: 5vh;
 }
 
 #footerFleche{
-    height: 10vh;
-    width: 10vw;
+    height: 9vh;
+    width: 9vw;
     position: absolute;
-    top: 55vh;
+    top: 53vh;
     left: 37vw;
 }
 
 #vague1_foot{
     position: absolute;
     left: 0;
-    bottom: -20vh;
+    bottom: -15vh;
     width: 100vw;
 }
 
@@ -198,7 +224,7 @@ ol.carousel-indicators li.active {
     position: absolute;
     width: 35vw;
     height: 35vh;
-    top: 64vh;
+    top: 63vh;
     left: 10vw;
 }
 

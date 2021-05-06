@@ -239,11 +239,3 @@ video:focus {
     left: 60vw;
     top: -5vh;
 }
-
-#fin{
-    color: white;
-    font-family: 'Jost', sans-serif;
-    position: relative;
-    text-align: center;
-    top: 87vh;
-}
