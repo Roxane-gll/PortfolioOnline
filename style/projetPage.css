@@ -108,6 +108,7 @@ ol.carousel-indicators li.active {
     top: 60px;
     left: 40vh;
     border-radius: 14px;
+    filter: drop-shadow(10px 10px 15px rgba(63, 116, 96, 0.3));
 }
 
 .shot >p:hover{
