@@ -28,14 +28,14 @@
 }
 
 #contact{
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     top: 48vh;
     transition: right 1.5s, opacity 0.5s;
 }
 
 #aPropos{
-    z-index: 3;
+    z-index: 4;
     position: fixed;
     top: 48vh;
     transition: left 1.5s, color 0.5s;
@@ -73,12 +73,12 @@
 
 .visibleP{
     color: black;
-    left: 65px;
+    left: 97px;
     transition: left 0.5s, color 1.5s;
 }
 
 .modalOn{
-    z-index: 2;
+    z-index: 4;
     background-color: #ffffff;
 }
 

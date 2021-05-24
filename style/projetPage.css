@@ -12,7 +12,7 @@
 
 .carousel-indicators{
     bottom: -115px;
-    right: 18.5vw;
+    right: 22vw;
     justify-content: flex-end;
 
 }
@@ -52,12 +52,12 @@
 }
 
 .carousel-control-prev{
-    left: 25vw;
-    top: 80vh;
+    left: 22vw;
+    top: 73vh;
 }
 .carousel-control-next{
-    right: 29vw;
-    top: 81vh;
+    right: 32vw;
+    top: 76vh;
 }
 
 .carousel-control-next-icon:after{
@@ -167,7 +167,7 @@ ol.carousel-indicators li.active {
 #footer>p:nth-of-type(2){
     font-family: 'Jost', sans-serif;
     font-size: 30px;
-    left: -5vw;
+    left: -4vw;
     top: 32vh;
 }
 
@@ -177,7 +177,7 @@ ol.carousel-indicators li.active {
     font-family: 'Jost', sans-serif;
     position: absolute;
     text-align: center;
-    top: 90vh;
+    top: 91vh;
     left: 35vw;
 }
 
@@ -210,7 +210,7 @@ ol.carousel-indicators li.active {
     height: 9vh;
     width: 9vw;
     position: absolute;
-    top: 53vh;
+    top: 47vh;
     left: 37vw;
 }
 
@@ -243,7 +243,7 @@ ol.carousel-indicators li.active {
     background-size: contain;
     position: absolute;
     top: 70vh;
-    left: 16vw;
+    left: 15vw;
     height: 5vh;
     width: 5vw;
 }
@@ -251,37 +251,43 @@ ol.carousel-indicators li.active {
 #num1{
     position: absolute;
     top: 60vh;
-    right: 12vw;
+    right: 15vw;
+    height: 50vh;
 }
 
 #num2{
     position: absolute;
-    top: 182vh;
-    right: 12vw;
+    top: 170vh;
+    right: 15vw;
+    height: 50vh;
 }
 
 #num3{
     position: absolute;
-    top: 296vh;
-    right: 12vw;
+    top: 282vh;
+    right: 15vw;
+    height: 50vh;
 }
 
 #num4{
     position: absolute;
-    top: 410vh;
-    right: 12vw;
+    top: 390vh;
+    right: 15vw;
+    height: 50vh;
 }
 
 #num5{
     position: absolute;
-    top: 525vh;
-    right: 12vw;
+    top: 500vh;
+    right: 15vw;
+    height: 50vh;
 }
 
 #num6{
     position: absolute;
-    top: 638vh;
-    right: 12vw;
+    top: 607vh;
+    right: 15vw;
+    height: 50vh;
 }
 
 @media (min-width:1000px) {

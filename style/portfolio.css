@@ -20,7 +20,7 @@ body{
 }
 
 #buttonToTop{
-    z-index: 4;
+    z-index: 3;
     background-image: url(../image/icones/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -127,7 +127,7 @@ video:focus {
     width: 30vw;
     height: 30vw;
     left: 56vw;
-    top: -25vh;
+    top: -20vh;
 }
 
 #phrase{
@@ -184,7 +184,7 @@ video:focus {
 
 #aProposObjet{
     position: absolute;
-    top: 5vh;
+    top: 7.2vh;
     width: 45vw;
     height: 45vh;
 }
@@ -207,7 +207,7 @@ video:focus {
 
 #contactObjet{
     position: absolute;
-    top: 19.5vh;
+    top: 20.5vh;
     right: -70vw;
     width: 30vw;
     height: 30vh;
@@ -220,7 +220,7 @@ video:focus {
     margin: 5px;
     position: relative;
     left: 65vw;
-    top: -15vh;
+    top: -11vh;
 }
 
 #contact>li>a>img:nth-of-type(1){
@@ -232,7 +232,7 @@ video:focus {
 }
 
 #contact>p{
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Jost', sans-serif;
     position: relative;
     text-align: left;
