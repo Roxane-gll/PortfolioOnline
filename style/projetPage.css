@@ -100,7 +100,7 @@ ol.carousel-indicators li.active {
 .shot >div{
     z-index: 4;
     font-weight: bold;
-    font-size: 6vh;
+    font-size: 7vh;
     color: #E63E1A;
     position: absolute; 
     top: 60vh;
