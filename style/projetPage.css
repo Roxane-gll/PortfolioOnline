@@ -284,8 +284,10 @@ ol.carousel-indicators li.active {
     right: 12vw;
 }
 
-@media (min-width:1000) {
+@media (min-width:1000px) {
     .shot>p{
-        top: 40vh;
+        top: 70vh;
+        left: 20vw;
+        width: 35vw;
     }
 }

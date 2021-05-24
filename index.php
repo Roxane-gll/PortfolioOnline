@@ -15,7 +15,7 @@ let contactsPerson=document.getElementById('contact')
 //add info from dribbble
 
 $.ajax({
-    url: 'https://api.dribbble.com/v2/user?access_token='+/*'<?= getenv('accessToken') ?>'*/'1058de76e6f55a4ba73ba03c7720a793966988428b151b9471905292ef85bd2c',
+    url: 'https://api.dribbble.com/v2/user?access_token='+'<?= getenv('accessToken') ?>',
     dataType: 'json',
     type: 'GET',
     success: function(data) {
