@@ -1,22 +1,3 @@
-/*import * as roxane from './dribbble/roxaneDribbble.js';
-import * as marine from './dribbble/marineDribbble.js';
-import * as ben from './dribbble/benDribbble.js';*/
-
-
-
-/*let who=document.domain;
-let person=roxane;
-if(who.includes("roxane")){
-    person=roxane;
-}else if(who.includes("marine")){
-    person=marine;
-}else if(who.includes("ben")){
-    person=ben;
-}
-*/
-
-
-
 const buttonsAllPage= document.querySelectorAll(".buttonInAllPage");
 
 const modalC=document.querySelector("#modalC");

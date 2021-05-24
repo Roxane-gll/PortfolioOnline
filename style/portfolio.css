@@ -67,7 +67,7 @@ body{
 }
 
 #annimation>div{
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     top: 10vh;
     left: 35vw;
