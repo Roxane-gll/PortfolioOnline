@@ -20,9 +20,6 @@ $.ajax({
     type: 'GET',
     success: function(data) {
         let links=Object.entries(data.links)
-        $('#footer').append(
-            `<a href="${data.html_url}">Plus de projet sur dribbble</a>`
-        )
         var keys = [];
         for (var key in links) {
             if (links.hasOwnProperty(key)) {

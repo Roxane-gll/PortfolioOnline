@@ -11,7 +11,7 @@
 }
 
 .carousel-indicators{
-    bottom: -120px;
+    bottom: -115px;
     right: 18.5vw;
     justify-content: flex-end;
 
@@ -52,12 +52,12 @@
 }
 
 .carousel-control-prev{
-    left: 26vw;
-    top: 540px;
+    left: 25vw;
+    top: 80vh;
 }
 .carousel-control-next{
     right: 29vw;
-    top: 545px;
+    top: 81vh;
 }
 
 .carousel-control-next-icon:after{
@@ -98,20 +98,22 @@ ol.carousel-indicators li.active {
     color: black;
 }
 .shot >div{
+    z-index: 4;
     font-weight: bold;
-    font-size: 37px;
+    font-size: 6vh;
     color: #E63E1A;
     position: absolute; 
-    top: 460px;
-    left: 35vh;
+    top: 60vh;
+    left: 27vh;
 }
 
 .shot>img{
-    height: 400px;
-    width: 533px;
+    z-index: 1;
+    height: 55vh;
+    width: 37vw;
     position: absolute;
     top: 60px;
-    left: 40vh;
+    left: 17vw;
     border-radius: 14px;
     filter: drop-shadow(10px 10px 15px rgba(63, 116, 96, 0.3));
 }
@@ -123,7 +125,8 @@ ol.carousel-indicators li.active {
 .shot>p{
     font-family: 'Jost', sans-serif;
     position: absolute;
-    top: 510px;
+    font-size: 2vh;
+    top: 33vw;
     left: 43vh;
     width: 500px;
     text-align: left;
@@ -248,35 +251,35 @@ ol.carousel-indicators li.active {
 #num1{
     position: absolute;
     top: 60vh;
-    right: 10vw;
+    right: 12vw;
 }
 
 #num2{
     position: absolute;
     top: 182vh;
-    right: 10vw;
+    right: 12vw;
 }
 
 #num3{
     position: absolute;
     top: 296vh;
-    right: 10vw;
+    right: 12vw;
 }
 
 #num4{
     position: absolute;
     top: 410vh;
-    right: 10vw;
+    right: 12vw;
 }
 
 #num5{
     position: absolute;
     top: 525vh;
-    right: 10vw;
+    right: 12vw;
 }
 
 #num6{
     position: absolute;
     top: 638vh;
-    right: 10vw;
+    right: 12vw;
 }

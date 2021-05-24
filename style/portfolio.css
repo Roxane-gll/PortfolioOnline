@@ -20,7 +20,7 @@ body{
 }
 
 #buttonToTop{
-    z-index: 3;
+    z-index: 4;
     background-image: url(../image/icones/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -67,6 +67,7 @@ body{
 }
 
 #annimation>div{
+    z-index: 2;
     position: absolute;
     top: 10vh;
     left: 35vw;

@@ -31,7 +31,7 @@
     z-index: 3;
     position: fixed;
     top: 48vh;
-    transition: left 1.5s, opacity 0.5s;
+    transition: right 1.5s, opacity 0.5s;
 }
 
 #aPropos{
@@ -42,25 +42,27 @@
 }
 
 .hiddenC{
-    opacity: 0;
-    right: -100vw;
-    transition: left 1.5s, opacity 0.5s;
+    opacity: 1;
+    right: 50vw;
+    transition: right 1.5s, opacity 0.5s;
 }
 
 .hiddenC>div>p>a{
-    opacity: 0;
-    right: -100vw;
-    transition: left 1.5s, opacity 0.5s;
+    opacity: 1;
+    right: 50vw;
+    transition: right 1.5s, opacity 0.5s;
 }
 
 .visibleC{
     opacity: 1;
-    transition: left 1.5s, opacity 0.5s;
+    right: 45vw;
+    transition: right 1.5s, opacity 0.5s;
 }
 
 .visibleC>div>p>a{
     opacity: 1;
-    transition: left 1.5s, opacity 0.5s;
+    right: 45vw;
+    transition: right 1.5s, opacity 0.5s;
 }
 
 .hiddenP{
