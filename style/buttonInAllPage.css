@@ -43,25 +43,25 @@
 
 .hiddenC{
     opacity: 1;
-    right: 50vw;
+    right: -150vw;
     transition: right 1.5s, opacity 0.5s;
 }
 
 .hiddenC>div>p>a{
     opacity: 1;
-    right: 50vw;
+    right: -150vw;
     transition: right 1.5s, opacity 0.5s;
 }
 
 .visibleC{
     opacity: 1;
-    right: 45vw;
+    right: 67vw;
     transition: right 1.5s, opacity 0.5s;
 }
 
 .visibleC>div>p>a{
     opacity: 1;
-    right: 45vw;
+    right: 67vw;
     transition: right 1.5s, opacity 0.5s;
 }
 

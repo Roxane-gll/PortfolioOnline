@@ -125,8 +125,8 @@ ol.carousel-indicators li.active {
 .shot>p{
     font-family: 'Jost', sans-serif;
     position: absolute;
-    font-size: 2vh;
-    top: 33vw;
+    font-size: 2.5vh;
+    top: 34vw;
     left: 43vh;
     width: 500px;
     text-align: left;
@@ -282,4 +282,10 @@ ol.carousel-indicators li.active {
     position: absolute;
     top: 638vh;
     right: 12vw;
+}
+
+@media (min-width:1000) {
+    .shot>p{
+        top: 40vh;
+    }
 }
